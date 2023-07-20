@@ -1,50 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="./style.css"/> 
-    <script src="./script.js" defer></script>
-  
-</head>
-<body>
-    <div id="contenedor">
-        <div id="calculadora">
-            <div class="contenido">
-                <h1>Hidratación Basal</h1> 
-                <h4 class= "item">Ingrese los datos del paciente</h4>
-                <input class= "item" type="number" placeholder="Peso en KG" id="peso"></input>
-                <p class="item" id="error"> * Complete los datos requeridos</p>
-                <button class="item" id="calcular">Calcular</button> 
-                <h5 class="titulos" id="titulosc"></h5>
-                <h5 class="titulos" id="titulohs"></h5>
-                <p class="item resultado" id="resultado1">70cc/hr</p>
-                <p class="item resultado" id="resultado2">105cc/hr</p>
-                <p class="item resultado" id="resultado3">m+m/2</p>
+<html>
+    <head>
+        <title>Wordle</title>
+        <link rel= "Stylesheet" href= "style.css"/>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id = "contenedor">
+            <div id = "contenido">
+            <h1>Wordle</h1>
+            <h4>¡Adivina la palabra!</h4>
+            <input type="text" placeholder="Escribe una palabra de 5 letras" id="guess-input"/>
+            <button id="guess-button">Intentar</button>
+            <div id="grid"></div>
+            <p id="guesses">
             </div>
         </div>
-        <div id="detalle">
-            <div class="comosecalcula">
-                <h1>¿Cómo se calcula?</h1>
-            </div>
-            <div id= "contenido1" class="oculto">
-                <h3>Método Holliday-Segar</h3>
-                <ul id= "ComoCalcular">
-                    <li>De 0kg a 10kg, 100cc por cada kilo.</li>
-                    <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg.</li>
-                    <li>De 20kg para arriba, se suman 20cc por cada kilo adicional.</li>
-                </ul>
-            </div>
-            <div id= "contenido2" class="oculto">
-                <h3>Método de Superficie Corporal</h3>
-                <ul id="ComoCalcular">
-                    <li>Más de 30 kg, se utiliza esta fórmula: Superficie corporal = ((peso * 4) + 7) / (peso + 90).</li>
-                    <li>EL resultado se multiplica por 1500 y por 2000.</li>
-                    <li>El médico decide cual de los dos resultados utilizará.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
